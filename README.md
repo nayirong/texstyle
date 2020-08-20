@@ -1,3 +1,7 @@
+This is a forked repo from rosberry https://github.com/rosberry/texstyle, for the purpose of learning and implementing github actions. 
+
+All credits of the app goes to https://github.com/rosberry/texstyle.
+
 <p align="center">
     <img src="https://raw.githubusercontent.com/rosberry/texstyle/master/.github/texstyle_logo.png" width="528" max-width="90%" alt="Stylin" />
 </p>
