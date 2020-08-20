@@ -25,15 +25,3 @@ jobs:
           xcodebuild test -project Texstyle.xcodeproj -scheme Texstyle -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
         env:
          destination: ${{ matrix.destination }}
-      - name: Link GitHub Issue and Pull Request with Trello Card
-        uses: jessicazu/trello-github-actions@v1.0
-        env:
-          TRELLO_API_KEY: f4912fa0a4f8b65009b7c563b904261b
-          TRELLO_API_TOKEN: ${{ secrets.TRELLO_TOKEN }}
-          TRELLO_BOARD_ID: 5f3ec5457ef52c3882ac185f
-          TRELLO_LIST_ID: 5f3ec743ddc6e422eaa346e3
-          TRELLO_DEPARTURE_LIST_ID: create_card_when_issue_open
-          TRELLO_DESTINATION_LIST_ID: move_card_when_pull_request_closed  
-        with:
-          # Action to do
-          trello-action: create_card_when_issue_opened
