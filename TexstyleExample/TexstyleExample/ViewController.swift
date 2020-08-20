@@ -41,7 +41,7 @@ final class ViewController: UIViewController {
         super.viewDidLoad()
 
         updateLabels()
-
+        print("asd 
         view.backgroundColor = .white
         labels.forEach(view.addSubview)
         view.addSubview(exampleButton)
