@@ -23,6 +23,7 @@ public final class Text: BaseText {
         }
 
         cachedAttributedString = attributedString
+        oriuntasdfz
         return attributedString
     }
 
