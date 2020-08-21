@@ -21,7 +21,7 @@ public final class Text: BaseText {
         for substyle in substyles {
             attributedString.addAttributes(substyle.style.attributes, range: substyle.range)
         }
-
+        print("asdasd
         cachedAttributedString = attributedString
         return attributedString
     }
